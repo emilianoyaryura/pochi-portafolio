@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  max-height: 100vh;
+
+  width: 100%;
+
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.hero__title {
+  font-weight: 100;
+  font-size: 70px;
+  line-height: 85px;
+  letter-spacing: -0.04em;
+
+  margin-top: 220px;
+}
+
+.anchor__link {
+  display: flex;
+  align-items: center;
+
+  align-self: center;
+
+  position: absolute;
+  bottom: 50px;
+
+  cursor: pointer;
+}
+
+.anchor__link p {
+  margin-right: 12px;
+}
+
+.anchor__link i {
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+
+.anchor__link:hover i {
+  transform: translateY(5px);
+}

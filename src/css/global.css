@@ -5,8 +5,28 @@
   --font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-body: 'Inter', var(--font-system), sans-serif;
+  --font-number: 'Alegreya', serif;
+  --font-color: #1d1d1d;
 }
 
 body {
   font-family: var(--font-body);
+  background-color: #f6f4f1;
+  color: var(--font-color);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+::selection {
+  background: #f5ebdc;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 0px 32px;
+  }
 }
