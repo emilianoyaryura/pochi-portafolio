@@ -7,6 +7,7 @@
   --font-body: 'Inter', var(--font-system), sans-serif;
   --font-number: 'Alegreya', serif;
   --font-color: #1d1d1d;
+  --background-color: #f6f4f1;
 }
 
 body {
@@ -15,18 +16,29 @@ body {
   color: var(--font-color);
 }
 
+::selection {
+  background: #f5ebdc;
+}
+
 .wrapper {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
 }
 
-::selection {
-  background: #f5ebdc;
+.small__wrapper {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about__container {
+  margin-top: 130px;
 }
 
 @media (max-width: 900px) {
-  .wrapper {
+  .wrapper,
+  .small__wrapper {
     padding: 0px 32px;
   }
 }

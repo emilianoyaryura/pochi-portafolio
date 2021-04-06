@@ -8,7 +8,7 @@ type Props = {
 
 const HomePage = ({ hero }: Props) => {
   return (
-    <PageLayout>
+    <PageLayout withoutNav>
       <HomeHero hero={hero} />
     </PageLayout>
   )
