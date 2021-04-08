@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin: 200px 0;
+}
+
+.portfolio {
+  display: flex;
+}
+
+.portfolio h1 {
+  font-weight: 100;
+  font-size: 42px;
+  line-height: 95%;
+
+  letter-spacing: -0.04em;
+}
+
+.mapped__portfolio:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.portfolio__description__left {
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.portfolio__description__right {
+  margin-right: 30px;
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.portfolio__description__right h1 {
+  text-align: right;
+}

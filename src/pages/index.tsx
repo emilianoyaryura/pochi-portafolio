@@ -9,11 +9,10 @@ type Props = {
 }
 
 const HomePage = ({ hero, portfolio }: Props) => {
-  console.log(portfolio)
   return (
     <PageLayout withoutNav>
       <HomeHero hero={hero} />
-      <Portfolio />
+      <Portfolio data={portfolio} />
     </PageLayout>
   )
 }
