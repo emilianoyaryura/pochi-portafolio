@@ -11,6 +11,7 @@ const Portfolio = ({ data }: any) => {
           style={{ alignSelf: idx % 2 == 0 ? 'flex-start' : 'flex-end' }}
         >
           <PortfolioPreview
+            slug={portfolio.fields.slug}
             title={portfolio.fields.title}
             image={portfolio.fields.image.fields}
             idx={idx}
