@@ -56,20 +56,6 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h2>{idx + 1}</h2>
         </div>
       )}
-      <div className={styles.portfolio__description__left}>
-        <h1>
-          <Markdown>{title}</Markdown>
-        </h1>
-        <Link href="">
-          <div>
-            <i>
-              <Arrow />
-            </i>
-            <a className="link__decoration">See project</a>
-          </div>
-        </Link>
-        <h2>{idx + 1}</h2>
-      </div>
       <div className={styles.portfolio__description__mobile}>
         <h1>
           <Markdown>{title}</Markdown>
