@@ -2,6 +2,8 @@ import styles from './portfolio.module.css'
 import Image from 'next/image'
 import { PortfolioProps } from 'ts/models'
 import Markdown from 'components/compound/markdown'
+import Link from 'next/link'
+import Arrow from 'components/icons/arrow'
 
 const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
   return (
@@ -11,9 +13,19 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
+          <Link href="">
+            <div>
+              <a className="link__decoration">See project</a>
+              <i>
+                <Arrow />
+              </i>
+            </div>
+          </Link>
+          <h2>{idx + 1}</h2>
         </div>
       )}
       <div
+        className={styles.image}
         style={{
           maxWidth: '580px',
           maxHeight: '641px',
@@ -33,8 +45,33 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
+          <Link href="">
+            <div>
+              <i>
+                <Arrow />
+              </i>
+              <a className="link__decoration">See project</a>
+            </div>
+          </Link>
+          <h2>{idx + 1}</h2>
         </div>
       )}
+      <div className={styles.portfolio__description__mobile}>
+        <h1>
+          <Markdown>{title}</Markdown>
+        </h1>
+        <div className={styles.portfolio__description__mobile__container}>
+          <h2>{idx + 1}</h2>
+          <Link href="">
+            <div className={styles.portfolio__description__mobile__link}>
+              <i>
+                <Arrow />
+              </i>
+              <a className="link__decoration">See project</a>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

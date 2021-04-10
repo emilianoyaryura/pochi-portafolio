@@ -13,4 +13,5 @@ export type PortfolioProps = {
   }
   title: string
   idx: number
+  slug: string
 }

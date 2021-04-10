@@ -190,3 +190,9 @@
     display: flex;
   }
 }
+
+@media (max-width: 500px) {
+  .mobile__header {
+    padding: 20px 16px;
+  }
+}

@@ -37,9 +37,34 @@ body {
   margin-top: 130px;
 }
 
+.link__decoration {
+  position: relative;
+}
+
+.link__decoration:after {
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+
+  height: 1px;
+
+  background-color: currentColor;
+
+  width: 50%;
+
+  content: '';
+}
+
 @media (max-width: 900px) {
   .wrapper,
   .small__wrapper {
     padding: 0px 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper,
+  .small__wrapper {
+    padding: 0px 16px;
   }
 }
