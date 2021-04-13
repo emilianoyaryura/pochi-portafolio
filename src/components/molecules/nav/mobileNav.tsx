@@ -33,7 +33,7 @@ const MobileNav = ({ selected }: NavProps) => {
             <Close />
           </i>
           <div>
-            <Link href="">
+            <Link href="/">
               <a
                 className={`${
                   selected === 'portfolio' && styles.mobile__selected
@@ -60,7 +60,7 @@ const MobileNav = ({ selected }: NavProps) => {
                 About me
               </a>
             </Link>
-            <Link href="">
+            <Link href="/blog">
               <a
                 className={`${selected === 'blog' && styles.mobile__selected} ${
                   styles.mobile__nav__item

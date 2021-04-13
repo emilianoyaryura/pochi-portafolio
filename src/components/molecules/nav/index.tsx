@@ -38,7 +38,7 @@ const Nav = ({ selected }: NavProps) => {
             About me
           </a>
         </Link>
-        <Link href="">
+        <Link href="/blog">
           <a
             className={`${selected === 'blog' && styles.selected} ${
               styles.nav__item
