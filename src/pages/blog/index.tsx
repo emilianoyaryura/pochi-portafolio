@@ -23,6 +23,12 @@ const Blog = ({ blogPosts }: Props) => {
                   <img
                     src={`https:${each.fields.image?.fields.file.url}`}
                     alt={each.fields.image?.fields.title}
+                    width={
+                      each.fields.image?.fields.file.details.image.width ?? 0
+                    }
+                    height={
+                      each.fields.image?.fields.file.details.image.height ?? 0
+                    }
                   />
                 )}
                 <h1>{each.fields.title}</h1>

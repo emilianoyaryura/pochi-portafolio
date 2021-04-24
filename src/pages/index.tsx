@@ -1,3 +1,4 @@
+import CustomHead from 'components/compound/customHead'
 import PageLayout from 'components/layouts/page-layout'
 import HomeHero from 'components/sections/home-hero/home-hero'
 import Portfolio from 'components/sections/portfolio'
@@ -11,6 +12,7 @@ type Props = {
 const HomePage = ({ hero, portfolio }: Props) => {
   return (
     <PageLayout selected="portfolio">
+      <CustomHead />
       <HomeHero hero={hero} />
       <Portfolio data={portfolio} />
     </PageLayout>
