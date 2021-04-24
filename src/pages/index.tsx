@@ -10,7 +10,7 @@ type Props = {
 
 const HomePage = ({ hero, portfolio }: Props) => {
   return (
-    <PageLayout withoutNav>
+    <PageLayout selected="portfolio">
       <HomeHero hero={hero} />
       <Portfolio data={portfolio} />
     </PageLayout>

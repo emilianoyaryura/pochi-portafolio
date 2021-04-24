@@ -11,6 +11,10 @@
   --background-color: #f6f4f1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
   background-color: #f6f4f1;
@@ -18,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: #f5ebdc;
+  background: #f19292;
 }
 
 .wrapper {

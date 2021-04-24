@@ -1,9 +1,19 @@
+.sticky {
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  z-index: 1000;
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-top: 60px;
 }
 
 .date {

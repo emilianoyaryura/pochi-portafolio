@@ -5,14 +5,13 @@ import styles from './page-layout.module.css'
 
 type Props = {
   children: React.ReactNode
-  withoutNav?: boolean
   selected?: 'portfolio' | 'about' | 'blog'
 }
 
-const PageLayout = ({ children, selected, withoutNav }: Props) => {
+const PageLayout = ({ children, selected }: Props) => {
   return (
     <div>
-      {!withoutNav && <Nav selected={selected} />}
+      <Nav selected={selected} />
       <MobileNav selected={selected} />
       <div className={`wrapper ${styles.wrapper}`}>
         {children}

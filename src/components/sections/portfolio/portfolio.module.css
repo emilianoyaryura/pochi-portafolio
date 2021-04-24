@@ -3,7 +3,8 @@
   flex-direction: column;
   width: 100%;
 
-  margin: 200px 0;
+  margin: 100px 0;
+  padding: 100px 0;
 }
 
 .portfolio {

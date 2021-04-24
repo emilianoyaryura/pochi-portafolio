@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: calc(100vh - 104px);
   max-height: 100vh;
 
   width: 100%;
