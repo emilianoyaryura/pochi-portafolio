@@ -71,6 +71,13 @@ body {
   line-height: 1.25;
   letter-spacing: -0.04em;
 
+  margin-bottom: 10px;
+}
+
+.blog__description {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--font-color);
+
   margin-bottom: 30px;
 }
 

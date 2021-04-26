@@ -1,3 +1,4 @@
+import CustomHead from 'components/compound/customHead'
 import PageLayout from 'components/layouts/page-layout'
 import Link from 'next/link'
 import { getBlogPosts } from '../../../lib/api'
@@ -14,6 +15,7 @@ const Blog = ({ blogPosts }: Props) => {
 
   return (
     <PageLayout selected="blog">
+      <CustomHead />
       <div className={styles.container}>
         <div className={styles.container__column}>
           {blogPosts?.slice(0, firstThird).map((each: any, idx: number) => (

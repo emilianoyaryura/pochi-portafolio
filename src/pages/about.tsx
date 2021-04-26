@@ -1,3 +1,4 @@
+import CustomHead from 'components/compound/customHead'
 import PageLayout from 'components/layouts/page-layout'
 import { getAboutPage } from '../../lib/api'
 import { renderBody } from '../../lib/renderer'
@@ -9,6 +10,7 @@ type Props = {
 const HomePage = ({ page }: Props) => {
   return (
     <PageLayout selected="about">
+      <CustomHead />
       <div className={`small__wrapper about__container`}>
         {renderBody(page)}
       </div>
