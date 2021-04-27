@@ -5,7 +5,7 @@ import Markdown from 'components/compound/markdown'
 import Link from 'next/link'
 import Arrow from 'components/icons/arrow'
 
-const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
+const PortfolioPreview = ({ image, title, idx, slug }: PortfolioProps) => {
   return (
     <div className={styles.portfolio}>
       {idx % 2 != 0 && (
@@ -13,7 +13,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div>
               <a className="link__decoration">See project</a>
               <i>
@@ -45,7 +45,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div>
               <i>
                 <Arrow />
@@ -62,7 +62,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
         </h1>
         <div className={styles.portfolio__description__mobile__container}>
           <h2>{idx + 1}</h2>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div className={styles.portfolio__description__mobile__link}>
               <i>
                 <Arrow />

@@ -12,7 +12,6 @@ const Blog = ({ blogPosts }: Props) => {
   const firstThird = parseFloat((blogPosts.length / 3).toFixed())
   const secondThird = firstThird * 2
   const lastThird = firstThird * 3
-
   return (
     <PageLayout selected="blog">
       <CustomHead />

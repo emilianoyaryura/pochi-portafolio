@@ -19,7 +19,6 @@ const Blog = ({ blogPosts }: Props) => {
     dateParts[0]
   }`
 
-  console.log(page)
   return (
     <PageLayout selected="blog">
       <CustomHead />

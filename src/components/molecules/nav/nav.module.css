@@ -191,8 +191,8 @@
   }
 }
 
-@media (max-width: 700px) {
-  .container {
+@media (max-width: 768px) {
+  .sticky {
     display: none;
   }
 
