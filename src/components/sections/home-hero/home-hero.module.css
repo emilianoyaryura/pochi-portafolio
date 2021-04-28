@@ -19,6 +19,9 @@
   letter-spacing: -0.04em;
 
   margin-top: 220px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .anchor__link {
@@ -31,6 +34,10 @@
   bottom: 50px;
 
   cursor: pointer;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .anchor__link p {
@@ -44,6 +51,17 @@
 
 .anchor__link:hover i {
   transform: translateY(5px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 800px) {
