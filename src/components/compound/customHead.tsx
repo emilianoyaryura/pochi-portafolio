@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const defaultOpengraph = {
-  title: 'Emiliano Yaryura | Portfolio',
+  title: 'John Doe | Portfolio',
   description: `Hey!`,
   image: ''
 }
