@@ -27,6 +27,7 @@ const Project = ({ portfolio }: Props) => {
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     slidesPerView: 1,
     loop: true,
+    spacing: 32,
     duration: 700,
     centered: true,
     initial: 0,
@@ -63,7 +64,7 @@ const Project = ({ portfolio }: Props) => {
       <div className={`small__wrapper ${styles.content}`}>
         {renderBody(page.fields.description)}
       </div>
-      <div className={`small__wrapper ${styles.slider}`}>
+      <div className={styles.slider}>
         <h1>The Process</h1>
         <div className="keen-slider" ref={sliderRef}>
           {page.fields.processImages.map((each: any, idx: number) => (
@@ -77,9 +78,9 @@ const Project = ({ portfolio }: Props) => {
         </div>
       </div>
       <div className={styles.arrows}>
-        <i onClick={() => slider.prev()}>
+        <button onClick={() => slider.prev()}>
           <NormalArrow />
-        </i>
+        </button>
         <div className={styles.arrows__dots}>
           {page.fields.processImages.map((_: any, idx: number) => (
             <div
@@ -92,9 +93,9 @@ const Project = ({ portfolio }: Props) => {
             />
           ))}
         </div>
-        <i onClick={() => slider.next()}>
+        <button onClick={() => slider.next()}>
           <NormalArrow />
-        </i>
+        </button>
       </div>
     </PageLayout>
   )

@@ -71,7 +71,7 @@
 
 .slider div img {
   object-fit: cover;
-  max-height: 450px;
+  max-height: 550px;
   width: 100%;
 }
 
@@ -83,11 +83,11 @@
   align-self: center;
 }
 
-.arrows i {
+.arrows button {
   cursor: pointer;
 }
 
-.arrows i:last-of-type {
+.arrows button:last-of-type {
   transform: rotate(180deg);
 }
 
