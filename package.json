@@ -16,9 +16,12 @@
     "@contentful/rich-text-react-renderer": "^14.1.2",
     "@contentful/rich-text-types": "^14.1.2",
     "contentful": "^8.2.1",
+    "framer-motion": "^4.1.10",
+    "keen-slider": "^5.4.0",
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-intersection-observer": "^8.31.1",
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {

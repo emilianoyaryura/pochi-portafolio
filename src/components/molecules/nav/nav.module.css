@@ -1,9 +1,34 @@
+.sticky {
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  z-index: 1000;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-top: 60px;
 }
 
 .date {
@@ -181,8 +206,8 @@
   }
 }
 
-@media (max-width: 700px) {
-  .container {
+@media (max-width: 768px) {
+  .sticky {
     display: none;
   }
 

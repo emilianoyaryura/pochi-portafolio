@@ -11,6 +11,10 @@
   --background-color: #f6f4f1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
   background-color: #f6f4f1;
@@ -18,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: #f5ebdc;
+  background: #f19292;
 }
 
 .wrapper {
@@ -66,6 +70,13 @@ body {
   font-size: 35px;
   line-height: 1.25;
   letter-spacing: -0.04em;
+
+  margin-bottom: 10px;
+}
+
+.blog__description {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--font-color);
 
   margin-bottom: 30px;
 }

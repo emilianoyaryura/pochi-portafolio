@@ -4,16 +4,48 @@ import { PortfolioProps } from 'ts/models'
 import Markdown from 'components/compound/markdown'
 import Link from 'next/link'
 import Arrow from 'components/icons/arrow'
+import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 
-const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
+const PortfolioPreview = ({ image, title, idx, slug }: PortfolioProps) => {
+  const animation = useAnimation()
+  const [ref, inView] = useInView({ threshold: 0.1 })
+
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible')
+    } else {
+      animation.start('hidden')
+    }
+  }, [animation, inView])
+
+  const variants = {
+    visible: {
+      opacity: 1,
+      y: 0
+    },
+    hidden: {
+      opacity: 0,
+      y: 50
+    }
+  }
+
   return (
-    <div className={styles.portfolio}>
+    <motion.div
+      ref={ref}
+      animate={animation}
+      initial="hidden"
+      variants={variants}
+      transition={{ duration: 0.5 }}
+      className={styles.portfolio}
+    >
       {idx % 2 != 0 && (
         <div className={styles.portfolio__description__right}>
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div>
               <a className="link__decoration">See project</a>
               <i>
@@ -45,7 +77,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           <h1>
             <Markdown>{title}</Markdown>
           </h1>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div>
               <i>
                 <Arrow />
@@ -62,7 +94,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
         </h1>
         <div className={styles.portfolio__description__mobile__container}>
           <h2>{idx + 1}</h2>
-          <Link href="">
+          <Link href={`portfolio/${slug}`}>
             <div className={styles.portfolio__description__mobile__link}>
               <i>
                 <Arrow />
@@ -72,7 +104,7 @@ const PortfolioPreview = ({ image, title, idx }: PortfolioProps) => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

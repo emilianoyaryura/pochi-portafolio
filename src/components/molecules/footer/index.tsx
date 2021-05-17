@@ -16,16 +16,16 @@ const Footer = () => {
         emilianoyaryurat@gmail.com
       </a>
       <div className={styles.icons}>
-        <a target="_blank" rel="noopener noreferrer" href="">
+        <a target="_blank" rel="noopener noreferrer" href="/">
           <Instagram />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="">
+        <a target="_blank" rel="noopener noreferrer" href="/">
           <Twitter />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="">
+        <a target="_blank" rel="noopener noreferrer" href="/">
           <Linkedin />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="">
+        <a target="_blank" rel="noopener noreferrer" href="/">
           <GitHub />
         </a>
       </div>

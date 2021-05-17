@@ -3,7 +3,7 @@ import styles from './portfolio.module.css'
 
 const Portfolio = ({ data }: any) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="portfolio">
       {data?.map((portfolio: any, idx: number) => (
         <div
           key={idx}
