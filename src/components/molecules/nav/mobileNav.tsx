@@ -54,15 +54,6 @@ const MobileNav = ({ selected }: NavProps) => {
                 About me
               </a>
             </Link>
-            <Link href="/blog">
-              <a
-                className={`${selected === 'blog' && styles.mobile__selected} ${
-                  styles.mobile__nav__item
-                }`}
-              >
-                Blog
-              </a>
-            </Link>
           </div>
           <p className={styles.mobile__date}>{`${getDate(month)}, ${year}`}</p>
         </div>
