@@ -1,11 +1,10 @@
 .sticky {
-  margin-top: 40px;
-  padding: 20px 0;
+  padding: 60px 0 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   position: sticky;
-  top: 0;
+  top: -40px;
   backdrop-filter: blur(40px);
   z-index: 1000;
 
