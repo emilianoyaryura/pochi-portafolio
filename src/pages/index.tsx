@@ -11,10 +11,12 @@ type Props = {
 
 const HomePage = ({ hero, portfolio }: Props) => {
   return (
-    <PageLayout selected="portfolio">
+    <PageLayout fullSize selected="portfolio">
       <CustomHead />
       <HomeHero hero={hero} />
-      <Portfolio data={portfolio} />
+      <div className="wrapper">
+        <Portfolio data={portfolio} />
+      </div>
     </PageLayout>
   )
 }

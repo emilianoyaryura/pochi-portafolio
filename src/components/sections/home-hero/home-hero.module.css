@@ -64,6 +64,12 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .float {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .hero__title {
     font-size: 60px;

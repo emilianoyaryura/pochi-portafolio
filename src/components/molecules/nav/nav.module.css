@@ -1,17 +1,31 @@
 .sticky {
-  margin-top: 40px;
-  padding: 20px 0;
+  padding: 60px 0 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   position: sticky;
-  top: 0;
+  top: -40px;
+  background-color: rgba(246, 244, 241, 0.25);
   backdrop-filter: blur(40px);
   z-index: 1000;
 
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.icons a:last-of-type {
+  margin-right: 0px;
 }
 
 @keyframes fadeIn {

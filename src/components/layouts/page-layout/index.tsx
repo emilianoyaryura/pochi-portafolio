@@ -6,14 +6,15 @@ import styles from './page-layout.module.css'
 type Props = {
   children: React.ReactNode
   selected?: 'portfolio' | 'about' | 'blog'
+  fullSize?: boolean
 }
 
-const PageLayout = ({ children, selected }: Props) => {
+const PageLayout = ({ children, selected, fullSize }: Props) => {
   return (
     <div>
       <Nav selected={selected} />
       <MobileNav selected={selected} />
-      <div className={`wrapper ${styles.wrapper}`}>
+      <div className={`${!fullSize && 'wrapper'} ${styles.wrapper}`}>
         {children}
         <Footer />
       </div>

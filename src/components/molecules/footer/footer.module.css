@@ -20,10 +20,14 @@
 
 .icons {
   display: flex;
-  gap: 50px;
   align-items: center;
 }
 
 .icons a {
   cursor: pointer;
+  margin-right: 50px;
+}
+
+.icons a:last-of-type {
+  margin-right: 0px;
 }
