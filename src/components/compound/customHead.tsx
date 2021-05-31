@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
 const defaultOpengraph = {
-  title: 'John Doe | Portfolio',
-  description: `Hey!`,
+  title: 'Salvador Gonzalo Posse | Portafolio',
+  description: `Bienvenido a mi portafolio!`,
   image: ''
 }
 

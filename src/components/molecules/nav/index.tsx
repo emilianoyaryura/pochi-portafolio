@@ -1,17 +1,16 @@
 import Logo from 'components/icons/logo'
 import Link from 'next/link'
+
+import { FiMail } from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+import { FiInstagram } from 'react-icons/fi'
 import styles from './nav.module.css'
-import { getDate } from '../../../../lib/util'
 
 export type NavProps = {
   selected?: 'portfolio' | 'about' | 'blog'
 }
 
 const Nav = ({ selected }: NavProps) => {
-  const date = new Date()
-  const month = date.getMonth()
-  const year = date.getFullYear()
-
   return (
     <div className={styles.sticky}>
       <div className={`wrapper ${styles.container}`}>
@@ -40,7 +39,29 @@ const Nav = ({ selected }: NavProps) => {
             </a>
           </Link>
         </div>
-        <p className={styles.date}>{`${getDate(month)}, ${year}`}</p>
+        <div className={styles.icons}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/salvador.posse/?hl=es-la"
+          >
+            <FiInstagram size={18} />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/PosseSalvador"
+          >
+            <FiTwitter size={18} />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:salvadorgonzaloposse@gmail.com"
+          >
+            <FiMail size={18} />
+          </a>
+        </div>
       </div>
     </div>
   )

@@ -1,7 +1,6 @@
-import GitHub from 'components/icons/gitHub'
-import Instagram from 'components/icons/instagram'
-import Linkedin from 'components/icons/linkedin'
-import Twitter from 'components/icons/twitter'
+import { FiMail } from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+import { FiInstagram } from 'react-icons/fi'
 import styles from './footer.module.css'
 
 const Footer = () => {
@@ -9,24 +8,33 @@ const Footer = () => {
     <div className={styles.footer}>
       <a
         className={styles.mail}
-        href="mailto:emilianoyaryurat@gmail.com"
+        href="mailto:salvadorgonzaloposse@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        emilianoyaryurat@gmail.com
+        salvadorgonzaloposse@gmail.com
       </a>
       <div className={styles.icons}>
-        <a target="_blank" rel="noopener noreferrer" href="/">
-          <Instagram />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/salvador.posse/?hl=es-la"
+        >
+          <FiInstagram size={18} />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="/">
-          <Twitter />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/PosseSalvador"
+        >
+          <FiTwitter size={18} />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="/">
-          <Linkedin />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href="/">
-          <GitHub />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:salvadorgonzaloposse@gmail.com"
+        >
+          <FiMail size={18} />
         </a>
       </div>
     </div>
