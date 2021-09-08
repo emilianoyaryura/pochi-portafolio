@@ -26,7 +26,7 @@ const Nav = ({ selected }: NavProps) => {
                 styles.nav__item
               }`}
             >
-              Portfolio
+              Portafolio
             </a>
           </Link>
           <Link href="/about">
@@ -35,7 +35,7 @@ const Nav = ({ selected }: NavProps) => {
                 styles.nav__item
               }`}
             >
-              About me
+              Quién soy
             </a>
           </Link>
         </div>
