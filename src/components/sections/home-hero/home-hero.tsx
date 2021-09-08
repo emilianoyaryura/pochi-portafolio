@@ -134,7 +134,7 @@ const HomeHero = ({ hero }: Props) => {
       </Draggable>
       <Link href="#portfolio">
         <a className={styles.anchor__link}>
-          <p>Keep reading</p>
+          <p>Seguir leyendo</p>
           <i>
             <Arrow />
           </i>
