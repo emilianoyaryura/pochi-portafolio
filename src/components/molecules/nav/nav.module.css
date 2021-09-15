@@ -1,12 +1,12 @@
 .sticky {
-  padding: 60px 0 20px;
+  padding: 68px 0 28px;
   width: 100%;
   display: flex;
   justify-content: center;
   position: sticky;
   top: -40px;
   background-color: rgba(246, 244, 241, 0.25);
-  backdrop-filter: blur(40px);
+  backdrop-filter: saturate(180%) blur(20px);
   z-index: 1000;
 
   animation-name: fadeIn;

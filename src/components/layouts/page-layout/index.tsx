@@ -16,6 +16,8 @@ const PageLayout = ({ children, selected, fullSize }: Props) => {
       <MobileNav selected={selected} />
       <div className={`${!fullSize && 'wrapper'} ${styles.wrapper}`}>
         {children}
+      </div>
+      <div className="wrapper">
         <Footer />
       </div>
     </div>
